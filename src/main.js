@@ -1,14 +1,14 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+//import VueRouter from 'vue-router'
 
 import App from './App.vue'
 
-import Contacts from './components/Contacts.vue'
-import NewContact from './components/NewContact.vue'
-import Profile from './components/Profile.vue'
+//import Contacts from './components/Contacts.vue'
+//import NewContact from './components/NewContact.vue'
+//import Profile from './components/Profile.vue'
 
-Vue.use('VueRouter');
-
+//Vue.use('VueRouter');
+/*
 var router = new VueRouter ({
   routes: [
     { path: '/contacts', component: Contacts },
@@ -16,11 +16,11 @@ var router = new VueRouter ({
     { path: '/profile', component: Profile}
   ]
 })
-
+*/
 new Vue({
   el: '#app',
   render: h => h(App),
-  router: router,
+//  router: router,
   data: {
     test: "bar"
   }

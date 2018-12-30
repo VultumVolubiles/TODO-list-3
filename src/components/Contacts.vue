@@ -1,18 +1,63 @@
 <template>
   <h1>Contacts</h1>
+<!--<div class="grid">
+  <div class="grid__row buttons">
+    <button :disabled= "pageNumber == 0" @click="prevPage" class="grid__item title"> Предыдущая </button>
+    <button :disabled= "pageNumber >= pageCount" @click="nextPage" class="grid__item title"> Следующая </button>
+  </div>
+
+  <div class="op wrapper">
+    <div class="original_post" v-for="(value, key) in paginatedData" :key="value.id">
+      {{key}} : {{value}}
+    </div>
+  </div>
+</div>-->
 </template>
 
 <script>
-export default {
-  name: "contacts.vue",
-  data () {
-     return {
-        data: null
-     }
-  },
+/*  import Store from '../store/store.js'
 
-}
-</script>
+*/  export default {
+    name: "contacts.vue",
+ /*   data () {
+       return {
+         pageNumber: 0
+
+       }
+    },
+    props: {
+      size: {
+        type: Number,
+        required: false,
+        default: 10
+      },
+    },
+    methods: {
+      nextPage(){
+        this.pageNumber++;
+      },
+      prevPage(){
+        this.pageNumber--;
+      },
+    },
+    computed: {
+      pageCount() {
+        var l = this.data.length,
+                s = this.size;
+        if (l%s==0) //если остаток от деления равен 0, то создаётся одна лишняя пустая страница
+          return Math.floor(l/s)-1;
+        else
+          return Math.floor(l/s);
+      },
+      paginatedData(){
+        const start = this.pageNumber * this.size,
+                end = start + this.size;
+        return Store.getters.get.slice(start, end);
+      },
+    }
+
+*/  }
+  </script>
 
 <style scoped>
   .grid {
